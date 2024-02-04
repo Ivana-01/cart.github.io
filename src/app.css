@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+body{
+    background-color: rgb(27, 27, 27);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: rgb(104, 104, 104);
+    position: sticky;
+}
+.logo{
+    width: 70px;
+    margin-left: 100px;
+}
+h1{
+    color: rgb(27, 27, 27);
+    margin-left: 50px;
+}
+.cartBtn{
+    background-color: transparent;
+    border: none;
+    width: 10%;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.cartBtnImg{
+    width: 50px;
+    height: 50px;
+}
+.cartNumber{
+    color: rgb(27, 27, 27);
+    background-color: rgb(94, 94, 94);
+    font-weight: 900;
+    border-radius: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    transform: translateX(-15px) translateY(35px);
+}
+.store{
+    margin: 30px 50px;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(104, 104, 104);
+    margin: 50px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+.item{
+    width: 20%;
+    height: 500px;
+    border-radius: 1rem;
+}
+.itemInfo{
+    padding-bottom: 20px;
+    color: rgb(27, 27, 27);
+    transform: translateY(-200px);
+    z-index: 0;
+    transition: all 1s ease-out;
+    background-color: rgb(104, 104, 104);
+}
+.img{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0 15px 25px;
+    z-index: 1;
+    position: relative;
+}
+.item:hover .itemInfo{
+    transform: translateY(-5px);
+}
+.name{
+    padding: 10px;
+    font-size: 24px;
+}
+.price{
+    font-size: 24px;
+}
+.addToCartBtn{
+    border: none;
+    background: rgb(27, 27, 27);
+    border-radius: 1rem;
+    padding: 10px;
+    color: rgb(104, 104, 104);
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    width: 50%;
+}
+.addToCartBtn:hover{
+    background-color: rgb(20, 20, 20);
+    color: rgb(85, 85, 85);
+    cursor: pointer;    
+}

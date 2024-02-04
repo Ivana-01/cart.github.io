@@ -1,0 +1,70 @@
+.cartBox{
+    width: 90%;
+    margin: 5%;
+    max-height: 80vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 2;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.empty{
+    color: rgb(104, 104, 104);
+    padding: 50px;
+    font-size: 24px;
+}
+.cartTitle{
+    color: rgb(104, 104, 104);
+}
+.closeBtn{
+    background-color: transparent;
+    border: none;
+    width: 10%;
+    color: rgb(104, 104, 104);
+    font-size: 36px;
+    cursor: pointer;
+}
+.itemList{
+    margin: 0 100px;
+}
+.cartItem{
+    width: 100%;
+    margin-right: 100px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid;
+    color: rgb(104, 104, 104);
+}
+.cartItemImg{
+    width: 20%;
+}
+.quantity{
+    padding: 10px;
+    width: 50px;
+    color: rgb(104, 104, 104);
+    background-color: transparent;
+    border: 1px solid rgb(104, 104, 104);
+}
+.removeBtn{
+    padding: 10px;
+    width: 70px;
+    color: rgb(104, 104, 104);
+    background-color: transparent;
+    border: 1px solid rgb(104, 104, 104);
+}
+.removeBtn:hover{
+    background-color: rgb(104, 104, 104);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.removeBtn:active{
+    background-color: rgb(85, 85, 85);
+    color: rgb(0, 0, 0);
+}
